@@ -1,6 +1,6 @@
 //your JS code here. If required.
-functionName()
-{
-	 alert(arguments.callee.name);
+function functionName() {
+  alert(functionName.name); // safer than arguments.callee
 }
+
 window.functionName = functionName;
